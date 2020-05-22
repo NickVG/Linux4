@@ -2,7 +2,7 @@
 
 ***ДЗ по ZFS***
 
-**Часть 1.**
+***Часть 1.***
 
 Установлен ZFS по мануалу https://openzfs.github.io/openzfs-docs/Getting%20Started/RHEL%20and%20CentOS.html.
 На всех свободных дисках создан zpool (zpool create zpool01 raidz sdb sdc sdd sde sdf)
@@ -78,6 +78,7 @@
 	otus  checksum     sha256     local
 
 Полные параметры ZFS и Zpool
+
 [root@otuslinux vagrant]# zfs get all otus
 NAME  PROPERTY              VALUE                  SOURCE
 otus  type                  filesystem             -
@@ -154,8 +155,7 @@ otus  special_small_blocks  0                      default
 
 
 
-[root@otuslinux vagrant]# zpool get all otus recordsize
-cannot open 'recordsize': no such pool
+[root@otuslinux vagrant]# zpool get all otus
 NAME  PROPERTY                       VALUE                          SOURCE
 otus  size                           480M                           -
 otus  capacity                       0%                             -
@@ -212,7 +212,7 @@ otus  feature@allocation_classes     enabled                        local
 otus  feature@resilver_defer         enabled                        local
 otus  feature@bookmark_v2            enabled                        local
 
-** Часть 3**
+***Часть 3***
 
 Снэпшот импортирован следующей командой:
 
