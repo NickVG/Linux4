@@ -79,7 +79,7 @@
 
 Полные параметры ZFS и Zpool
 
-	[root@otuslinux vagrant]# zfs get all otus
+[root@otuslinux vagrant]# zfs get all otus
 	NAME  PROPERTY              VALUE                  SOURCE
 	otus  type                  filesystem             -
 	otus  creation              Fri May 15  4:00 2020  -
@@ -155,7 +155,7 @@
 
 
 
-	[root@otuslinux vagrant]# zpool get all otus
+[root@otuslinux vagrant]# zpool get all otus
 	NAME  PROPERTY                       VALUE                          SOURCE
 	otus  size                           480M                           -
 	otus  capacity                       0%                             -
@@ -218,7 +218,7 @@
 
 	[root@otuslinux vagrant]# zfs receive otus/storage@task2 < otus_task2.file
 
-	Ниже представлен поиск запрашиваемой фразы
+Ниже представлен поиск запрашиваемой фразы
 
 	[root@otuslinux vagrant]# zfs list
 	NAME             USED  AVAIL     REFER  MOUNTPOINT
